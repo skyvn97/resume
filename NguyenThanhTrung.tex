@@ -1,0 +1,185 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheadTwo}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubhead}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\normalsize#3}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\link}[2]{{\color{blue}\href{#1}{#2}}}
+
+% \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%              CV STARTS HERE              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\huge Nguyen Thanh Trung} & Email: \href{mailto:ngthanhtrung23@gmail.com}{ngthanhtrung23@gmail.com}\\
+  & Mobile: +65 9850 0401
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubhead
+      {Google}{Sep. 2016 -- Present}
+      {Software Engineer}
+      \resumeItemListStart
+        \resumeItem{Working on Tez -- mobile payment application targeted at Indian users.}
+        \resumeItem{Developing administration dashboards which combine and translate data from various backends into meaningful data points for Tez customer support, risk and compliance operators.}
+        \resumeItem{Developing streaming batch jobs for processing over 3,000 log events per second and collect relevant data into Bigtable.}
+        \resumeItem{Problem setting and co-ordinating problem setters' discussion for \link{https://code.google.com/codejam/kickstart/}{Google Codejam Kickstart}.}
+        \resumeItem{Language/Technology: \textbf{Java}, \textbf{Go}, \textbf{protobuf}, \textbf{Spanner}, \textbf{Bigtable}, \textbf{Flume}.}
+      \resumeItemListEnd
+
+    \resumeSubhead
+      {Garena}{Nov. 2015 -- Sep. 2016}
+      {Software Engineer}
+      \resumeItemListStart
+        \resumeItem{Implemented payment and logistic system for Shopee ‐- mobile application for online shopping.}
+        \resumeItem{Managed task queues for syncing 300,000 daily shipments' status with third-party logistics partners in Vietnam and Thailand.}
+        \resumeItem{Language/Technology: \textbf{Python}, \textbf{Django}, \textbf{Javascript}.}
+      \resumeItemListEnd
+
+    \resumeSubhead
+      {PayPal}{Jun. 2014 -- Nov. 2015}
+      {Software Engineer}
+      \resumeItemListStart
+        \resumeItem{Implemented partner onboarding flow -- allow users to create PayPal accounts on various partner applications.}
+        \resumeItem{Language/Technology: \textbf{Java}, \textbf{Node.js}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS----------
+\section{Achievements \& Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheadTwo
+      {Ranked 15th in Facebook Hackercup}{2016}
+      \resumeItemListStart
+        \resumeItem{Competed individually to solve algorithmic problems in 2‐-3 hours. The contest is
+          organized annually by Facebook with around \textbf{10,000} competitors. Ranked 15th in
+          World Final round.}
+      \resumeItemListEnd
+    
+    \resumeSubheadTwo
+      {Ranked 15th in ACM ICPC World Final}{2016}
+      \resumeItemListStart
+        \resumeItem{Competed in a team of three to solve 10‐-12 algorithmic problems in five hours
+          contest using C++ / Java.}
+        \resumeItem{Highest place amongst all Vietnamese teams participated in ACM ICPC.}
+      \resumeItemListEnd
+
+    \resumeSubheadTwo
+      {ACM ICPC Regional Champion}{2015}
+      \resumeItemListStart
+        \resumeItem{Champion of Jakarta ACM ICPC Regional 2015 and 3rd place in Singapore ACM ICPC Regional 2015.}
+      \resumeItemListEnd
+
+    \resumeSubheadTwo
+      {Top 150 in Google Code Jam}{2013, 2014, 2015}
+      \resumeItemListStart
+        \resumeItem{Competed individually to solve 4 algorithmic problems in 2.5 hours. The contest is
+        organized annually by Google with over 10,000 competitors. Placed 93rd in 2013, 126th in 2014
+        and 121st in 2015.}
+      \resumeItemListEnd
+
+    \resumeSubheadTwo
+      {Ranked 17th in ACM ICPC World Final}{2012}
+  \resumeSubHeadingListEnd
+
+
+%----------ACTIVITIES------------
+\section{Activities}
+  \resumeSubHeadingListStart
+    \resumeSubheadTwo
+      {Administrator, Contest Manager at \link{http://vnoi.info}{vnoi.info}}{Jun. 2010 -- Present}
+      \resumeItemListStart
+        \resumeItem{Leading a team of 5--10 people in creating problemsets, managing contest platform and
+          raising funds for yearly programming competitions with over 250 participants.}
+        \resumeItem{Managing \link{https://www.facebook.com/groups/VNOIForum/}{VNOI Facebook group} for algorithmic discussions with 8,000 members.}
+      \resumeItemListEnd
+
+    \resumeSubheadTwo
+      {Coach for National Olympiad team}{Jun. 2010 -- Aug. 2013}
+      \resumeItemListStart
+        \resumeItem{Taught programming and algorithms to a group of 20 high school students preparing
+          for Vietnamese National Olympiads in Informatics.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubhead
+      {Nanyang Technological University}{Aug. 2010 -- May. 2014}
+      {Bachelor of Computer Science;  GPA: 4.84/5.0}
+  \resumeSubHeadingListEnd
+
+\end{document}
